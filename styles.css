@@ -1,0 +1,89 @@
+/* Reset some default styles to ensure consistency */
+body, html, ul, li, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Google Tasks-like container */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Task list */
+.task-list {
+  list-style: none;
+  padding: 10px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+/* Task checkbox */
+.task-item .checkbox {
+  margin-right: 10px;
+}
+
+/* Completed task */
+.task-item.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Task title */
+.task-title {
+  flex: 1;
+}
+
+/* Add task input */
+.add-task-input {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Task actions */
+.task-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 0 0 5px 5px;
+}
+
+/* Button styles */
+.button {
+  background-color: #4285F4;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #3a76dd;
+}
+
+.button:active {
+  background-color: #2962c0;
+}
