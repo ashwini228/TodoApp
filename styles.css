@@ -87,3 +87,7 @@ body {
 .button:active {
   background-color: #2962c0;
 }
+ .Completed {
+  text-decoration: line-through;
+  color: #888;
+}

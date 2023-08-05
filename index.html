@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Todo App</title>
+    <title>Todo Application</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	
 </head>
 <body>
     <h1>Todo App</h1>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	
     <input type="text" id="taskInput" placeholder="Enter a task">
     <button onclick="addTask()">Add Task</button>
     <ul id="taskList">
@@ -14,5 +15,23 @@
     </ul>
 
     <script src="todoapp.js"></script>
+
+
+  <script>
+    
+    const taskItems = document.querySelectorAll('.task-item');
+
+    
+    taskItems.forEach((taskItem) => {
+      const checkbox = taskItem.querySelector('.task-checkbox');
+      checkbox.addEventListener('change', () => {
+        taskItem.classList.toggle('completed', checkbox.checked);
+      });
+    });
+  </script>
 </body>
 </html>
+
+
+
+
